@@ -9,6 +9,7 @@ object Project : Project({
         password("sec", "credentialsJSON:22315edf-7a6e-41f0-905f-7799fb08e9cd")
         param("a", "a")
         param("b", "b")
+        password("env.ppwd", "credentialsJSON:f53aca41-803b-42d3-ad7c-0a06b9ca40f7")
         param("c", "c")
         password("system.ppwd", "credentialsJSON:f53aca41-803b-42d3-ad7c-0a06b9ca40f7")
     }
