@@ -10,7 +10,7 @@ object Project : Project({
         param("a", "a")
         param("b", "b")
         param("c", "c")
-        password("system.abc", "credentialsJSON:f53aca41-803b-42d3-ad7c-0a06b9ca40f7")
+        password("system.ppwd", "credentialsJSON:f53aca41-803b-42d3-ad7c-0a06b9ca40f7")
     }
 
     subProject(subProj_1253.Project)
