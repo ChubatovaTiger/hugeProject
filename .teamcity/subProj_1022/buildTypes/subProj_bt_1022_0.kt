@@ -14,6 +14,7 @@ object subProj_bt_1022_0 : BuildType({
 
     steps {
         script {
+            enabled = false
             scriptContent = "echo %env.ppwd% > a.txt"
         }
         step {
