@@ -17,15 +17,8 @@ object subProj_bt_1022_0 : BuildType({
             enabled = false
             scriptContent = "echo %env.ppwd% > a.txt"
         }
-        step {
-            type = "Bigproject_subProj_1022_Bt10220"
-            executionMode = BuildStep.ExecutionMode.DEFAULT
-            param("sec", "credentialsJSON:03c848ae-0be2-4173-b32d-04c0a8621c8d")
-            param("a", "a")
-            param("b", "b")
-            param("env.ppwd", "credentialsJSON:094a6287-d7b4-46e9-95a8-e89f0079291c")
-            param("c", "c")
-            param("system.ppwd", "credentialsJSON:4f9e06b7-b6b6-44dc-afd1-0cbcb0dd2cde")
+        script {
+            scriptContent = "echo %env.ppwd% > a.txt"
         }
     }
 })
