@@ -9,7 +9,7 @@ object subProj_bt_1022_0 : BuildType({
     artifactRules = "+:a.txt => ./"
 
     params {
-        password("env.ppwd", "credentialsJSON:22315edf-7a6e-41f0-905f-7799fb08e9cd")
+        password("env.ppwd", "credentialsJSON:d9065c72-de9e-4b1e-9bd8-fcc34c90dcee")
     }
 
     steps {
