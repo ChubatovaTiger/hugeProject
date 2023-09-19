@@ -41,7 +41,7 @@ for (j in 0..2) {
             name = "subProj $i"
 
  subProject {
-            id("subProj_$i_subSubProj_$i")
+            id("subProj_$i" + "_subSubProj_$i")
             name = "subProj $i subSub Proj $i"
 
 
