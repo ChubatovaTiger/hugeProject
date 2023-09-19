@@ -47,7 +47,7 @@ for (j in 0..2) {
 
             for (j in 0..numConfigurationsPerProject) {
                 buildType {
-                    id("subProj_$i_subsubProj_bt_$i" + "_$j")
+                    id("subProj_$i" + "_subSubProj_$i" + "_bt_$i" + "_$j")
                     name = "bt $i $j"
                     
     vcs {
