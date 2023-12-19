@@ -35,7 +35,7 @@ if (i > 10) {
 
     triggers {
         vcs {
-           
+           branchFilter=""
         }
     }
 
