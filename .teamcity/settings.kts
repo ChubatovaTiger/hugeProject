@@ -5,7 +5,7 @@ import jetbrains.buildServer.configs.kotlin.v2019_2.buildFeatures.pullRequests
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
 
-version = "2021.2"
+version = "2023.05"
 
 project {
 
@@ -25,7 +25,8 @@ project {
                 buildType {
                     id("subProj_bt2_$i" + "_$j")
                     name = "bt2 $i $j"
-  if (j > 799) {
+  if (j > 798) {
+if (i > 10) {
   
     
     vcs {
@@ -38,6 +39,7 @@ project {
         }
     }
 
+}    //endif
 }    //endif
 
                 }
