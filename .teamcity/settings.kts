@@ -9,7 +9,7 @@ version = "2021.2"
 
 project {
 
-    vcsRoot(HttpsGithubComGradleGradleGit)
+   // vcsRoot(HttpsGithubComGradleGradleGit)
 
 
     val numProjects=12
@@ -27,7 +27,13 @@ project {
                     name = "bt $i $j"
                     
     vcs {
-        root(HttpsGithubComGradleGradleGit)
+        root(AbsoluteId("Project2_Perf"))
+    }
+
+    triggers {
+        vcs {
+           
+        }
     }
 
                 }
@@ -37,11 +43,6 @@ project {
 }
 
 
-object HttpsGithubComGradleGradleGit : GitVcsRoot({
-    name = "https://github.com/ChubatovaTiger/ChubatovaGradleTestsBackup"
-    url = "https://github.com/ChubatovaTiger/ChubatovaGradleTestsBackup"
-    branch = "refs/heads/master"
-})
 
 
 
