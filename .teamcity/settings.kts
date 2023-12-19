@@ -12,7 +12,7 @@ project {
    // vcsRoot(HttpsGithubComGradleGradleGit)
 
 
-    val numProjects=12
+    val numProjects=120
     val numConfigurationsPerProject=80
 
 
