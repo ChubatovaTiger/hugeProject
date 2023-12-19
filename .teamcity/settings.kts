@@ -12,8 +12,8 @@ project {
    // vcsRoot(HttpsGithubComGradleGradleGit)
 
 
-    val numProjects=120
-    val numConfigurationsPerProject=80
+    val numProjects=12
+    val numConfigurationsPerProject=800
 
 
     for (i in 0..numProjects) {
@@ -23,9 +23,11 @@ project {
 
             for (j in 0..numConfigurationsPerProject) {
                 buildType {
-                    id("subProj_bt_$i" + "_$j")
-                    name = "bt $i $j"
-                    
+                    id("subProj_bt2_$i" + "_$j")
+                    name = "bt2 $i $j"
+  if (j > 799) {
+  
+    
     vcs {
         root(AbsoluteId("Project2_Perf"))
     }
@@ -35,6 +37,8 @@ project {
            
         }
     }
+
+}    //endif
 
                 }
             }
